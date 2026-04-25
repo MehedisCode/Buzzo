@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Buzzo.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97ec2dfc6ec8dc31ef0c1339db2f3de08889c0c3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+419fd0c201ef249691b776c98fa4a989875dbb16")]
 [assembly: System.Reflection.AssemblyProductAttribute("Buzzo.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Buzzo.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
