@@ -12,4 +12,18 @@ public class Operator
 
     public ICollection<Bus> Buses { get; private set; } = new List<Bus>();
     public ICollection<Route> Routes { get; private set; } = new List<Route>();
+
+    private Operator()
+    {
+    }
+
+    public Operator(string companyName, string contactEmail, string contactPhone, string address)
+    {
+        Id = Guid.NewGuid();
+        CompanyName = companyName;
+        ContactEmail = contactEmail;
+        ContactPhone = contactPhone;
+        Address = address;
+        CreatedAt = DateTime.UtcNow;
+    }
 }

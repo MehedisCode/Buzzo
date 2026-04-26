@@ -1,3 +1,5 @@
+using Buzzo.Domain.Enums;
+
 namespace Buzzo.Domain.Entities;
 
 public class Seat
@@ -9,5 +11,16 @@ public class Seat
 
     public Bus Bus { get; private set; } = null!;
     public ICollection<BookingSeat> BookingSeats { get; private set; } = new List<BookingSeat>();
+
+    private Seat()
+    {
+    }
+
+    public Seat(Guid busId, string seatNumber)
+    {
+        Id = Guid.NewGuid();
+        BusId = busId;
+        SeatNumber = seatNumber;
+    }
 
 }

@@ -13,4 +13,25 @@ public class Passenger
 
     public Booking Booking { get; private set; } = null!;
     public ICollection<BookingSeat> BookingSeats { get; private set; } = new List<BookingSeat>();
+
+    private Passenger()
+    {
+    }
+
+    public Passenger
+    (
+        Guid bookingId,
+        string firstName,
+        string lastName,
+        int age,
+        Gender gender
+    )
+    {
+        Id = Guid.NewGuid();
+        BookingId = bookingId;
+        FirstName = firstName;
+        LastName = lastName;
+        Age = age;
+        Gender = gender;
+    }
 }
