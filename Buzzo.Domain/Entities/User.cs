@@ -2,6 +2,7 @@ namespace Buzzo.Domain.Entities;
 
 public class User
 {
+    public Guid Id { get; set; }
     public string FirstName { get; private set; } = string.Empty;
     public string LastName { get; private set; } = string.Empty;
     public string? Phone { get; private set; }
